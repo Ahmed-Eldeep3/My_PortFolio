@@ -154,8 +154,8 @@
             'Monitor Academy': 'Monitor_Academy',
             'European Clinic': 'European_Center',
             'To-Do-App': 'To_do',
-            'Exel-clinic- system': 'Exel-clinic- system',
-            'calculator': 'calculator',
+            'Exel-clinic-system': 'Exel-clinic-system',
+            'Calculator': 'calculator',
         };
 
         // Project images mapping
