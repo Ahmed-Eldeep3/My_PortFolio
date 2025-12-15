@@ -151,9 +151,9 @@
         
         // List of specific projects to display with their EXACT repository names
         const SPECIFIC_PROJECTS = {
-            'Monitor Academy': 'Monitor Academy',
-            'European Clinic': 'European Clinic',
-            'To-Do-App': 'To-Do-App',
+            'Monitor Academy': 'Monitor_Academy',
+            'European Clinic': 'European_Center',
+            'To-Do-App': 'To_do',
             'Exel-clinic- system': 'Exel-clinic- system',
             'calculator': 'calculator',
         };
