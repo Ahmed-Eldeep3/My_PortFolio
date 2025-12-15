@@ -180,19 +180,18 @@
         // Function to fetch all projects and filter them
         async function fetchSpecificProjects() {
             const projectsContainer = document.getElementById('projectsContainer');
-            
-            try {
-                const response = await fetch(`https://github.com/users/${GITHUB_USERNAME}/repos?per_page=100`);
-                
-                if (!response.ok) {
-                    throw new Error(`GitHub API error: ${response.status}`);
-                }
-                
-                const repos = await response.json();
-                
-                // Clear loading message
-                projectsContainer.innerHTML = '';
-                
+
+    try {
+        const response = await fetch(
+            `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`
+        );
+
+        if (!response.ok) {
+            throw new Error('GitHub API error');
+        }
+
+        const repos = await response.json();
+        projectsContainer.innerHTML = '';
                 let foundProjects = [];
                 
                 // First, try to find exact matches
