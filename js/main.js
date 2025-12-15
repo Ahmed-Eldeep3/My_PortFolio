@@ -183,7 +183,7 @@
 
     try {
         const response = await fetch(
-            `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`
+           `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`
         );
 
         if (!response.ok) {
@@ -213,7 +213,7 @@
                         foundProjects.push({
                             repo: {
                                 name: projectName,
-                                html_url: `https://github.com/${GITHUB_USERNAME}/${projectName}`,
+                                html_url: `https://github.com/${GITHUB_USERNAME}/${repoName}`,
                                 description: PROJECT_DESCRIPTIONS[projectKey] || `My ${projectName} project`,
                                 language: 'Code'
                             },
