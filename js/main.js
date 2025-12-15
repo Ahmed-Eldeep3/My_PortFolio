@@ -213,7 +213,7 @@
                         foundProjects.push({
                             repo: {
                                 name: projectName,
-                                html_url: `https://github.com/${GITHUB_USERNAME}/${repoName}`,
+                                html_url: `https://github.com/${GITHUB_USERNAME}/${projectName}`,
                                 description: PROJECT_DESCRIPTIONS[projectKey] || `My ${projectName} project`,
                                 language: 'Code'
                             },
