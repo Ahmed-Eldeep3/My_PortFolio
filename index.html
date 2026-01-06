@@ -5,402 +5,392 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Eldeep | Mobile App Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="grid-lines"></div>
+
     <!-- Header -->
     <header id="header">
-        <div class="container">
-            <nav>
-                <div class="logo">Ahmed Eldeep</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#technical-skills">Languages</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">&lt;AhmedEldeep/&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
     </header>
-    <div class="particles" id="particles"></div>
-    <div class="floating-element">
-        <i class="fab fa-react"></i>
-    </div>
-    <div class="floating-element">
-        <i class="fab fa-js"></i>
-    </div>
-    <div class="floating-element">
-        <i class="fas fa-code"></i>
-    </div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content fade-in">
-                <div class="hero-text">
-                    <div class="hero-badge">Mobile App Developer</div>
-                    <h1 class="hero-title">Hi, I'm <span>Ahmed Eldeep</span></h1>
-                    <p class="hero-description">I build production-ready digital systems with a strong focus on performance, security, and user experience.</p>
-                    <div class="hero-btns">
-                        <a href="#projects" class="btn">View My Work</a>
-                        <a href="assets\Modern Cv.pdf" class="btn btn-outline" target="_blank">Download My CV</a>
-
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span>Available for Work</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm Ahmed Eldeep
+                </h1>
+                <p class="hero-subtitle">
+                    Mobile App Developer specialized in building exceptional digital experiences with Android & iOS native development
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="assets/Modern Cv.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Done</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">GitHub Repos</div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-container">
-                        <div class="profile-wrapper">
-                            <div class="profile-ring"></div>
-                            <div class="profile-inner">
-                                <img src="image/profile.jpg" alt="Ahmed Eldeep" class="profile-image" id="profileImage">
-                                <div class="profile-overlay">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                            </div>
-                            <div class="profile-sparkles" id="sparkles"></div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="profile-showcase">
+                    <div class="profile-ring"></div>
+                    <div class="profile-wrapper">
+                        <div class="profile-inner">
+                            <img src="image/profile.jpg" alt="Ahmed Eldeep">
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="float-icon"><i class="fab fa-android"></i></div>
+                        <div class="float-icon"><i class="fab fa-swift"></i></div>
+                        <div class="float-icon"><i class="fas fa-code"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate developer transforming ideas into powerful mobile applications</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3 class="about-heading">Crafting Digital Experiences</h3>
+                    <p class="about-text">
+                        I'm a mobile app developer specializing in native Android and iOS development. With a passion for creating intuitive, high-performance applications, I bring ideas to life through clean code and thoughtful design.
+                    </p>
+                    <p class="about-text">
+                        My journey in development has equipped me with expertise in modern technologies and best practices, from implementing clean architecture to optimizing app performance and ensuring seamless user experiences.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clean Architecture & MVVM</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>API Integration & Real-time Data</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Performance Optimization</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Modern UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Android Developer (Native)</h4>
+                            <span class="timeline-date">2023 - Present</span>
+                            <p>Building production-ready Android applications using Kotlin with Jetpack Compose, implementing clean architecture and modern development practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>iOS Developer (Native)</h4>
+                            <span class="timeline-date">2026 - Present</span>
+                            <p>Developing native iOS applications with Swift and SwiftUI, focusing on seamless user experiences and efficient data management.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Excel Expert & Data Management</h4>
+                            <span class="timeline-date">2023 - 2025</span>
+                            <p>Advanced Excel automation and data analysis for medical centers and booking systems, creating efficient workflows and reporting solutions.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="section-divider"></div>
-<section id="about">
-    <div class="container">
 
-        <div class="about-header">
-            <i class="fas fa-id-card about-icon"></i>
-            <div class="about-title-wrap">
-                <h2 class="section-title left">About Me</h2>
-            </div>
-        </div>
-        <p class="section-subtitle fade">A passionate developer with a focus on creating efficient and scalable android applications</p>
-        <div class="about-layout">
-            <div class="about-left fade">
-                <h3 class="about-title">Transforming Ideas Into Digital Reality</h3>
-                <p class="about-text">
-                    I'm a android app developer with expertise in modern app technologies. I enjoy creating
-                    solutions that are not only functional but also provide an exceptional user experience.
-                </p>
-                <p class="about-text">
-                    My journey in app development started several years ago, and since then I've been constantly
-                    learning and adapting to new technologies and methodologies.
-                </p>
-                <div class="about-stats">
-                    <div class="stat fade"><div class="stat-number">10+</div><div class="stat-text">Projects Completed</div></div>
-                    <div class="stat fade"><div class="stat-number">2+</div><div class="stat-text">Years Experience</div></div>
-                    <div class="stat fade"><div class="stat-number">8+</div><div class="stat-text">GitHub Repositories</div></div>
-                    <div class="stat fade"><div class="stat-number">+</div><div class="stat-text">Technologies</div></div>
-                </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
             </div>
 
-            <!-- Right Side -->
-            <div class="about-right">
-
-                <div class="exp-box fade">
-                    <h3 class="exp-title">Android Developer (Native)</h3>
-                    <p class="exp-date">Production Applications | 2023–2025</p>
-                    <ul class="exp-list">
-                        <li>Building native Android applications using Kotlin for real production environments</li>
-                        <li>Implementing API integration, QR code scanning, and secure data flow</li>
-                        <li>Applying clean architecture principles and optimizing app performance</li>
-                    </ul>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #3DDC84 0%, #07C160 100%);">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3>Android Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Jetpack Compose</span>
+                        <span class="skill-tag">Android SDK</span>
+                        <span class="skill-tag">MVVM</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                    <span class="skill-percent">92%</span>
                 </div>
 
-                <div class="exp-box fade">
-                    <h3 class="exp-title">iOS Developer(native)</h3>
-                    <p class="exp-date">Personal Projects | 2025–2026</p>
-                     <ul class="exp-list">
-                        <li>Building native iOS applications using swift for real production environments</li>
-                        <li>Implementing API integration, QR code scanning, and secure data flow</li>
-                        <li>Applying clean architecture principles and optimizing app performance</li>
-                    </ul>
-                </div>
-                <div class="exp-box fade">
-                    <h3 class="exp-title">Excel Expert & Data Management</h3>
-                    <p class="exp-date">Real Production Projects | 2023–2025</p>
-                    <ul class="exp-list">
-                        <li>Advanced Excel skills: formulas, pivot tables, and charts</li>
-                        <li>Automated reporting for medical centers and bookings</li>
-                        <li>Data analysis and visualization to support decision making</li>
-                        <li>Integrated Excel workflows with backend systems and dashboards</li>
-                    </ul>
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #147EFB 0%, #0A5EC7 100%);">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3>iOS Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Swift</span>
+                        <span class="skill-tag">SwiftUI</span>
+                        <span class="skill-tag">Xcode</span>
+                        <span class="skill-tag">UIKit</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%"></div>
+                    </div>
+                    <span class="skill-percent">40%</span>
                 </div>
 
-            </div>
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #FFCA28 0%, #FFA000 100%);">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Firebase & API</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Room DB</span>
+                        <span class="skill-tag">Retrofit API</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                    <span class="skill-percent">88%</span>
+                </div>
 
-
-        </div>
-    </div>
-</section>
-
-    <!-- Section Divider -->
-    <div class="section-divider"></div>
-
-    <section id="technical-skills">
-    <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">Tools and technologies</p>
-
-                  <div class="tech-grid">
-
-              <div class="tech-card">
-                  <i class="fab fa-java tech-icon"></i>
-                  <span>Java</span>
-                  <div class="bar"><div class="fill" style="--w:90%"></div></div>
-                  <p>90%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fas fa-code tech-icon"></i>
-                  <span>Kotlin</span>
-                  <div class="bar"><div class="fill" style="--w:95%"></div></div>
-                  <p>95%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fas fa-layer-group tech-icon"></i>
-                  <span>Jetpack Compose</span>
-                  <div class="bar"><div class="fill" style="--w:90%"></div></div>
-                  <p>90%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fab fa-android tech-icon"></i>
-                  <span>Android Studio</span>
-                  <div class="bar"><div class="fill" style="--w:92%"></div></div>
-                  <p>92%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fab fa-google tech-icon"></i>
-                  <span>Android SDK</span>
-                  <div class="bar"><div class="fill" style="--w:88%"></div></div>
-                  <p>88%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fab fa-swift tech-icon"></i>
-                  <span>Swift</span>
-                  <div class="bar"><div class="fill" style="--w:70%"></div></div>
-                  <p>70%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fab fa-apple tech-icon"></i>
-                  <span>iOS Development</span>
-                  <div class="bar"><div class="fill" style="--w:65%"></div></div>
-                  <p>65%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fas fa-mobile-alt tech-icon"></i>
-                  <span>Xcode</span>
-                  <div class="bar"><div class="fill" style="--w:68%"></div></div>
-                  <p>68%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fas fa-database tech-icon"></i>
-                  <span>Firebase</span>
-                  <div class="bar"><div class="fill" style="--w:95%"></div></div>
-                  <p>95%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fas fa-database tech-icon"></i>
-                  <span>Room Database</span>
-                  <div class="bar"><div class="fill" style="--w:85%"></div></div>
-                  <p>85%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fab fa-github tech-icon"></i>
-                  <span>GitHub</span>
-                  <div class="bar"><div class="fill" style="--w:88%"></div></div>
-                  <p>88%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fas fa-code tech-icon"></i>
-                  <span>C++</span>
-                  <div class="bar"><div class="fill" style="--w:75%"></div></div>
-                  <p>75%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fab fa-html5 tech-icon"></i>
-                  <span>HTML</span>
-                  <div class="bar"><div class="fill" style="--w:80%"></div></div>
-                  <p>85%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fab fa-css3-alt tech-icon"></i>
-                  <span>CSS</span>
-                  <div class="bar"><div class="fill" style="--w:75%"></div></div>
-                  <p>75%</p>
-              </div>
-
-              <div class="tech-card">
-                  <i class="fas fa-file-excel tech-icon"></i>
-                  <span>Excel</span>
-                  <div class="bar"><div class="fill" style="--w:85%"></div></div>
-                  <p>85%</p>
-              </div>
-
-          </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-subtitle">My Featured Projects</p>
-
-        <div id="projectsContainer" class="projects-grid">
-            <!-- Projects will be loaded here -->
-            <div class="loading">
-                <i class="fas fa-spinner fa-spin"></i> Loading featured projects...
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #E34F26 0%, #F06529 100%);">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Other Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Excel</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Certifications Section -->
-<section id="certifications">
-    <div class="container">
-        <h2 class="section-title">Certifications</h2>
-        <p class="section-subtitle">My professional certifications and achievements</p>
-        
-        <div class="certifications-container" id="certificationsContainer">
-            <!-- سيتم إضافة الشهادات ديناميكياً -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Explore my latest work and creations</p>
+            </div>
+
+            <div id="projectsContainer" class="projects-grid">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading projects...</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Achievements</span>
+                <h2 class="section-title">Certifications & Skills</h2>
+                <p class="section-subtitle">Professional development and expertise</p>
+            </div>
+
+            <div id="certificationsContainer" class="certs-grid"></div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Have a project in mind or want to discuss potential opportunities? Let's talk!</p>
-            
-            <div class="contact-content">
+            <div class="section-header">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind? Let's work together</p>
+            </div>
+
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-item fade-in">
+                    <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>ahmed5.4eldeep@gmail.com</p>
-                        </div>
+                        <h3>Email</h3>
+                        <p>ahmed5.4eldeep@gmail.com</p>
                     </div>
-                    
-                    <div class="contact-item fade-in">
+
+                    <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+20 1557559895</p>
-                        </div>
+                        <h3>Phone</h3>
+                        <p>+20 1557559895</p>
                     </div>
-                    
-                    <div class="contact-item fade-in">
+
+                    <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>18  abbas El Akked Street ,Nasr,Egypt</p>
-                        </div>
+                        <h3>Location</h3>
+                        <p>Nasr City, Egypt</p>
                     </div>
-                    
+
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ahmed-eldeep-3356282b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank">
+                        <a href="https://www.linkedin.com/in/ahmed-eldeep-3356282b5" target="_blank" class="social-link">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/Ahmed-Eldeep3" class="social-link" target="_blank">
+                        <a href="https://github.com/Ahmed-Eldeep3" target="_blank" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.facebook.com/ahmed.eldeep.769704" class="social-link" target="_blank">
-                            <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com/ahmed.eldeep.769704" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/ahmed_e1deep?igsh=MWNhcTd5amVrdzJqbQ==" class="social-link" target="_blank">
+                        <a href="https://www.instagram.com/ahmed_e1deep" target="_blank" class="social-link">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
-                </div>                
-                <div class="contact-form fade-in">
-                    <form id="contactForm">
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>                       
+                            <input type="text" id="name" name="name" required>
+                        </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>                       
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>                     
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>                      
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Ahmed Eldeep</h3>
-                    <p>android Developer passionate about creating innovative app solutions and delivering exceptional user experiences.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ahmed-eldeep-3356282b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/Ahmed-Eldeep3" class="social-link" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>               
+                <div class="footer-brand">
+                    <div class="logo">&lt;AhmedEldeep/&gt;</div>
+                    <p>Mobile App Developer passionate about creating innovative solutions and exceptional user experiences.</p>
+                </div>
+                
                 <div class="footer-links">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#technical-skills">Languages</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
                 </div>
+
                 <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-envelope"></i> ahmed6.3eldeep@gmail.com</p>
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> ahmed5.4eldeep@gmail.com</p>
                     <p><i class="fas fa-phone"></i> +20 1557559895</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 18  abbas El Akked Street ,Nasr,Egypt</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nasr City, Egypt</p>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2023 Ahmed El. All Rights Reserved.</p>
+                <p>&copy; 2025 Ahmed Eldeep. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-<script type="module" src="./js/main.js"></script>   
+
+    <script src="js/main.js"></script>
 </body>
 </html>
