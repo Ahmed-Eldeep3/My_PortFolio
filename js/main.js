@@ -51,18 +51,25 @@ const CONFIG = {
     },
     certifications: [
         {
-            title: "Android Native App Development",
+            title: "iOS Developer (Native)",
+            issuer: "Self-Study & Practical Projects",
+            date: "2026 - Present",
+            icon: "fab fa-apple",
+            description: "Developing native iOS applications with Swift and SwiftUI, focusing on seamless user experiences and efficient data management."
+        },
+        {
+            title: "Android Developer (Native)",
             issuer: "Self-Study & Practical Projects",
             date: "2024 - Present",
             icon: "fab fa-android",
-            description: "Skilled in developing Android apps using Kotlin with MVVM architecture for clean separation of UI and logic. Experienced in creating responsive and interactive interfaces using Jetpack Compose and XML layouts."
+            description: "Building production-ready Android applications using Kotlin with Jetpack Compose, implementing clean architecture and modern development practices."
         },
         {
-            title: "iOS Native App Development",
-            issuer: "Self-Study & Practical Projects",
-            date: "2025 - Present",
-            icon: "fab fa-apple",
-            description: "Knowledgeable in Swift and SwiftUI for building iOS applications. Capable of designing responsive user interfaces with a focus on user experience."
+            title: "Excel Expert & Data Management",
+            issuer: "Self-Taught & Project-Based Learning",
+            date: "2023 - Present",
+            icon: "fas fa-file-excel",
+            description: "Advanced Excel automation and data analysis for medical centers and booking systems, creating efficient workflows and reporting solutions."
         },
         {
             title: "Database (Firebase)",
@@ -77,13 +84,6 @@ const CONFIG = {
             date: "2024 - Present",
             icon: "fab fa-github",
             description: "Proficient in Git workflows, branching strategies, collaboration, and project management using GitHub."
-        },
-        {
-            title: "Excel System",
-            issuer: "Self-Taught & Project-Based Learning",
-            date: "2023 - Present",
-            icon: "fas fa-file-excel",
-            description: "Advanced skills in formulas, Pivot Tables, and data analysis. Ability to create dynamic spreadsheets and generate detailed reports."
         }
     ]
 };
@@ -132,9 +132,9 @@ class Utils {
             'CSS': 'fab fa-css3-alt',
             'Python': 'fab fa-python',
             'Java': 'fab fa-java',
-            'Kotlin': 'fab fa-android',
+            'Kotlin': 'fas fa-code',
             'Swift': 'fab fa-swift',
-            'Dart': 'fas fa-mobile-alt',
+            'Dart': 'fas fa-code',
             'Excel': 'fas fa-file-excel',
             'C++': 'fas fa-code',
             'C#': 'fas fa-code',
@@ -663,7 +663,7 @@ class ProjectsManager {
                 </div>
                 <div class="project-badge">
                     <i class="${icon}"></i>
-                    ${project.language || 'Code'}
+                    ${this.getLanguageLabel(project.language)}
                 </div>
             </div>
             
@@ -686,7 +686,7 @@ class ProjectsManager {
                     </span>
                     <span class="stat">
                         <i class="fas fa-circle" style="color: var(--primary);"></i>
-                        <span>${project.language || 'Code'}</span>
+                        <span>${this.getLanguageLabel(project.language)}</span>
                     </span>
                 </div>
 
@@ -706,6 +706,19 @@ class ProjectsManager {
         `;
 
         return card;
+    }
+
+    getLanguageLabel(language) {
+        const labels = {
+            'Kotlin': 'Kotlin',
+            'Dart': 'Dart',
+            'Java': 'Java',
+            'Swift': 'Swift',
+            'Excel': 'Excel',
+            'Python': 'Python',
+            'JavaScript': 'JavaScript'
+        };
+        return labels[language] || language || 'Code';
     }
 
     showFallbackProjects() {
@@ -929,31 +942,6 @@ class ContactFormHandler {
         callBtn.innerHTML = '<i class="fas fa-phone"></i>';
         callBtn.title = 'Call Me';
         document.body.appendChild(callBtn);
-
-        const contactInfo = document.querySelector('.contact-info');
-        if (contactInfo) {
-            const whatsappCard = document.createElement('div');
-            whatsappCard.className = 'contact-card';
-            whatsappCard.innerHTML = `
-                <div class="contact-icon" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <h3>WhatsApp</h3>
-                <p>${CONFIG.contact.phone}</p>
-                <a href="https://wa.me/${CONFIG.contact.whatsapp}?text=Hi%20Ahmed!" target="_blank" class="btn btn-primary" style="margin-top: 10px; font-size: 0.9rem; padding: 8px 20px; display: inline-flex; align-items: center; gap: 8px;">
-                    <i class="fab fa-whatsapp"></i> Chat Now
-                </a>
-            `;
-            
-            const phoneCard = Array.from(contactInfo.children).find(child => 
-                child.querySelector('h3')?.textContent === 'Phone'
-            );
-            if (phoneCard) {
-                phoneCard.insertAdjacentElement('afterend', whatsappCard);
-            } else {
-                contactInfo.insertBefore(whatsappCard, contactInfo.querySelector('.social-links'));
-            }
-        }
     }
 }
 
@@ -1067,6 +1055,28 @@ class SkillsAnimator {
     }
 }
 
+// ==================== Location Handler ====================
+class LocationHandler {
+    constructor() {
+        this.updateLocation();
+    }
+
+    updateLocation() {
+        const locationElement = document.querySelector('.contact-card p');
+        const locationCards = document.querySelectorAll('.contact-card');
+        
+        locationCards.forEach(card => {
+            const heading = card.querySelector('h3');
+            if (heading && heading.textContent.trim() === 'Location') {
+                const locationText = card.querySelector('p');
+                if (locationText) {
+                    locationText.innerHTML = 'Nasr City, Egypt<br>New Salhia City, Egypt';
+                }
+            }
+        });
+    }
+}
+
 // ==================== Initialize Everything ====================
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 Portfolio Initialized');
@@ -1080,6 +1090,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new CertificationsManager();
     new StatsCounter();
     new SkillsAnimator();
+    new LocationHandler();
     
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
