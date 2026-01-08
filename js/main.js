@@ -34,8 +34,8 @@ const CONFIG = {
             'calculator': 'https://sm.ign.com/ign_pk/news/a/apples-off/apples-official-calculator-app-finally-arrives-on-ipads_m19z.jpg',
         },
         descriptions: {
-            'Monitor Academy': 'An app for tracking student performance and educational progress, allowing teachers and administrators to record attendance, monitor progress, and generate accurate reports efficiently.',
-            'European Clinic': 'An educational and entertaining app that provides diverse learning content in an engaging and user-friendly way, with interactive lessons and quizzes.',
+            'Monitor Academy': 'A comprehensive educational application built to manage academies and digital learning platforms effectively. The app enables students to access courses, follow their learning progress, and engage with educational content, while offering instructors and administrators a centralized system for course management, student tracking, and performance analysis. The platform is designed with scalability, performance, and user experience in mind.',
+            'European Clinic': 'A full-featured medical application designed to streamline clinic operations and enhance patient care. The app allows patients to create accounts, book appointments, and track their medical sessions, while providing doctors and clinic staff with tools to manage schedules, patient records, and daily workflows efficiently. The system emphasizes security, performance, and ease of use to ensure reliable handling of sensitive medical data.',
             'To-Do-App': 'My first flutter project using dart featuring MVVM architecture.',
             'Exel-clinic-system': 'A comprehensive Excel file for managing center data, including client tracking, session schedules, appointments, and daily/monthly statistics.',
             'calculator': 'An advanced calculator app supporting basic and complex calculations, featuring a clean and simple interface with support for sequential operations.'
